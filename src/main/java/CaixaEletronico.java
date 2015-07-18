@@ -4,6 +4,13 @@
 public class CaixaEletronico {
 
     public static int saque(int valor){
-        return valor/100;
+        int retorno = 0;
+        if(valor >= 100){
+            retorno = valor/100;
+        } else{
+            retorno = valor/50;
+        }
+
+        return retorno;
     }
 }
