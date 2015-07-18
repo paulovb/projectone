@@ -1,6 +1,3 @@
-/**
- * Created by root on 18/07/15.
- */
 public class CaixaEletronico {
 
     public static int saque(int valor){
@@ -8,7 +5,11 @@ public class CaixaEletronico {
         if(valor >= 100){
             retorno = valor/100;
         } else{
-            retorno = valor/50;
+            if (valor >= 50){
+                retorno = valor/50;
+            } else{
+                retorno = valor/20;
+            }
         }
 
         return retorno;
