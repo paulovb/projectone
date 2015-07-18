@@ -17,4 +17,9 @@ public class CaixaEletronicoTest {
     public void saqueDe20Test(){
         Assert.assertEquals(CaixaEletronico.saque(20),1);
     }
+
+    @Test
+    public void saqueDe10Test(){
+        Assert.assertEquals(CaixaEletronico.saque(10),1);
+    }
 }
