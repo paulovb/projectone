@@ -4,7 +4,7 @@ import org.junit.Test;
 public class CaixaEletronicoTest {
 
     @Test
-    public void test(){
-        Assert.assertEquals(300,3);
+    public void saqueDe300Test(){
+        Assert.assertEquals(CaixaEletronico.saque(300),3);
     }
 }
